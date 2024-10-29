@@ -77,8 +77,9 @@ function Home() {
     <main className="relative">
       <Link
         to="/services"
-        className={`fixed top-24 right-4 bg-primary-600 text-white p-2 rounded-full shadow-lg hover:bg-primary-700 transition-all duration-300 z-50 ${showButton ? 'translate-x-0' : 'translate-x-full'
-          }`}
+        className={`fixed top-24 right-4 bg-[#0a4661] text-white p-2 rounded-full shadow-lg hover:bg-[#0a4661]/80 transition-all duration-300 z-50 ${
+          showButton ? 'translate-x-0' : 'translate-x-full'
+        }`}
         style={{
           transitionProperty: 'transform, opacity',
           transitionDuration: '300ms',
@@ -125,35 +126,35 @@ function Home() {
         </div>
       </section>
 
-      <section className="about-us py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+      <section className="about-us py-20 bg-gradient-to-br from-white-100 to-[#0a4661]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold mb-8 text-gray-800 text-center">
               Empowering Businesses with
-              <span className="block text-blue-600">Accurate and Instant Identity Verification</span>
+              <span className="block text-[#0a4661]">Accurate and Instant Identity Verification</span>
             </h2>
-            <div className="bg-white p-8 rounded-xl relative overflow-hidden">
+            <div className="bg-[#0a4661] p-8 rounded-xl relative overflow-hidden">
               <div className="absolute top-0 left-0 w-2 h-full "></div>
-              <p className="text-xl mb-6 text-gray-700 leading-relaxed">
+              <p className="text-xl mb-6 text-white leading-relaxed">
                 VerifyNow offers seamless and secure identity verification and background check services tailored to your needs. Our cutting-edge solutions provide businesses with the confidence they need to make informed decisions quickly and securely.
               </p>
-              <p className="text-xl text-gray-700 leading-relaxed">
+              <p className="text-xl text-white leading-relaxed">
                 Whether you're onboarding new employees, verifying tenant information, or conducting thorough background checks, VerifyNow ensures accuracy, reliability, and compliance with evolving regulatory requirements.
               </p>
               <div className="mt-8 flex items-center justify-center"></div>
             </div>
             <div className="mt-12 flex justify-center space-x-8">
               <div className="text-center">
-                <span className="text-4xl font-bold text-blue-600">99.9%</span>
-                <p className="text-gray-600 mt-2">Accuracy Rate</p>
+                <span className="text-4xl font-bold text-[#0a4661]">99.9%</span>
+                <p className="text-black mt-2">Accuracy Rate</p>
               </div>
               <div className="text-center">
-                <span className="text-4xl font-bold text-blue-600">24/7</span>
-                <p className="text-gray-600 mt-2">Support</p>
+                <span className="text-4xl font-bold text-[#0a4661]">24/7</span>
+                <p className="text-black mt-2">Support</p>
               </div>
               <div className="text-center">
-                <span className="text-4xl font-bold text-blue-600">100+</span>
-                <p className="text-gray-600 mt-2">Integrations</p>
+                <span className="text-4xl font-bold text-[#0a4661]">100+</span>
+                <p className="text-black mt-2">Integrations</p>
               </div>
             </div>
           </div>
@@ -193,9 +194,9 @@ function Home() {
         </div>
       </section>
 
-      <section className="verifynow-access py-24 bg-gradient-to-r from-blue-200 to-blue-500"> {/* Darker blue gradient */}
+      <section className="verifynow-access py-24 bg-[#0a4661]"> {/* Changed from bg-gradient-to-r from-blue-200 to-blue-500 */}
         <div className="container mx-auto px-4">
-          <h2 className="text-5xl font-bold mb-16 text-center text-white"> {/* Changed text color to white for contrast */}
+          <h2 className="text-5xl font-bold mb-16 text-center text-white">
             VerifyNow <span className="text-blue-200">Access</span>
           </h2>
           <div ref={missionRef} className="flex flex-col lg:flex-row items-center justify-between opacity-0 transition-opacity duration-1000 ease-out">
